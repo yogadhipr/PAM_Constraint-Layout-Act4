@@ -42,21 +42,21 @@ public class MainActivity extends AppCompatActivity {
                 //menyimpan input user di edittext password kedalam variabel password
                 password = edpassword.getText().toString();
 
-                if (nama.equals("") && password.equals("")) {
+                if (nama.equals("yoga@gmail.com") && password.equals("abc")) {
                     Toast t = Toast.makeText(getApplicationContext(),
-                            "username dan password anda salah", Toast.LENGTH_LONG);
+                            "login berhasil", Toast.LENGTH_LONG);
                     t.show();
-                } else if (nama.equals("")) {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "username anda salah", Toast.LENGTH_LONG);
-                    t.show();
-                } else if (password.equals("")) {
+                } else if (nama.equals("yoga@gmail.com")) {
                     Toast t = Toast.makeText(getApplicationContext(),
                             "password anda salah", Toast.LENGTH_LONG);
                     t.show();
+                } else if (password.equals("abc")) {
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "username anda salah", Toast.LENGTH_LONG);
+                    t.show();
                 } else {
                     Toast t = Toast.makeText(getApplicationContext(),
-                            "login berhasil", Toast.LENGTH_LONG);
+                            "username dan password salah", Toast.LENGTH_LONG);
                     t.show();
                 }
             }

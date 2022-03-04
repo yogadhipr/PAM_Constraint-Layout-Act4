@@ -19,7 +19,8 @@
         app:srcCompat="@drawable/download" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/edEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +35,8 @@
         app:layout_constraintVertical_bias="0.45" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:singleLine="true"
+        android:id="@+id/edPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -50,7 +52,7 @@
         app:layout_constraintVertical_bias="0.549" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bsigin"

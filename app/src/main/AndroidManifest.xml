@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstraintLayout">
         <activity
+            android:name=".ActivityKedua"
+            android:label="@string/label2"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -18,6 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

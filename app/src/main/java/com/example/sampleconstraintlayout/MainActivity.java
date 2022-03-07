@@ -42,23 +42,53 @@ public class MainActivity extends AppCompatActivity {
                 //menyimpan input user di edittext password kedalam variabel password
                 password = edpassword.getText().toString();
 
-                if (nama.equals("yoga@gmail.com") && password.equals("abc")) {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "login berhasil", Toast.LENGTH_LONG);
-                    t.show();
-                } else if (nama.equals("yoga@gmail.com")) {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "password anda salah", Toast.LENGTH_LONG);
-                    t.show();
-                } else if (password.equals("abc")) {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "username anda salah", Toast.LENGTH_LONG);
-                    t.show();
-                } else {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "username dan password salah", Toast.LENGTH_LONG);
-                    t.show();
+                //mengeset email
+                String email="admin@mail.com";
+                //mengeset password
+                String pass ="123";
+
+                if(nama.isEmpty() || password.isEmpty()){
+                    edemail.setError("Username tidak boleh kosong");
+                    edpassword.setError("password tidak boleh kosong");
+
+                }else{
+                    if (nama.equals(email) && password.equals(pass)) {
+                        Toast t = Toast.makeText(getApplicationContext(),
+                                "login berhasil", Toast.LENGTH_LONG);
+                        t.show();
+
+                        //membuat objek bundle
+                        Bundle b = new Bundle();
+
+                        //memasukkan value dari variabel nama dengan kunci "a" dan password dengan kata kunci "b"
+                        //dan dimasukkan ke bundle
+                        b.putString("a", nama.trim());
+                        b.putString("b", password.trim());
+
+                        //membuat objek intent berpindah activity dari main act ke act hasil
+                        Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
+
+                        //memasukkan bundle kedalam intent untuk dikirimkan ke act2
+                        i.putExtras(b);
+
+                        //berpindah ke act2
+                        startActivity(i);
+
+                    } else if (nama.equals(email)) {
+                        Toast t = Toast.makeText(getApplicationContext(),
+                                "password anda salah", Toast.LENGTH_LONG);
+                        t.show();
+                    } else if (password.equals(pass)) {
+                        Toast t = Toast.makeText(getApplicationContext(),
+                                "username anda salah", Toast.LENGTH_LONG);
+                        t.show();
+                    } else {
+                        Toast t = Toast.makeText(getApplicationContext(),
+                                "username dan password salah", Toast.LENGTH_LONG);
+                        t.show();
+                    }
                 }
+
             }
         });
     }

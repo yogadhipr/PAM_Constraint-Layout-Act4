@@ -1,20 +1,38 @@
 <resources>
     <string name="app_name">Sample Constraint Layout</string>
     <string name="var1">ini pesan</string>
+
     <string name="tEmail">Email</string>
     <string name="tLogin">LOGIN</string>
     <string name="tPassword">Password</string>
     <string name="bsigin">Sig-In</string>
+
+    <string name="register">Register?</string>
+
     <string name="tData">Data Anda</string>
     <string name="txemail">ini hasil Email</string>
     <string name="txpassword">ini hasil Password</string>
     <string name="label2">Login Berhasil</string>
+
     <string name="mnDftr">Pendaftaran</string>
-    <string name="Idaftar">Daftar</string>
+    <string name="Idaftar">Register</string>
     <string name="enama">Masukkan Nama</string>
     <string name="eemail">Masukkan Email</string>
     <string name="epass">Masukkan Password</string>
     <string name="erepass">Konfirmasi Password</string>
-    <string name="ealamat">Masukkan Alamat</string>
+    <string name="btregis">Register</string>
+
     <string name="fabSimpan">Save</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re-password</string>
+
+    <string name="lihatdata">Lihat Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="editdata">Edit Data</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="Nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
 </resources>

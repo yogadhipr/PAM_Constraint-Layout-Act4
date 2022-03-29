@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstraintLayout">
-        <activity android:name=".DaftarActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ItemListView"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".home"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DaftarActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityKedua"
             android:label="@string/label2"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,8 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

@@ -24,7 +24,6 @@ public class DaftarActivity extends AppCompatActivity{
         setContentView(R.layout.activity_menu);
 
         edtNama =findViewById(R.id.edNama);
-        edtAlamat =findViewById(R.id.edAlamat);
         edtEmail =findViewById(R.id.edEmail);
         edtPassword =findViewById(R.id.edPassword);
         edtrepass =findViewById(R.id.edrepass);
